@@ -144,35 +144,7 @@ $(document).ready(function(){
   });  
 
 
-// SpaceX Timeline
-
- $('.year-info').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  dots:false,
-  fade: true,
-  asNavFor: '.year-nav',
-  autoplay: true,
-  autoplaySpeed: 200
 });
-$('.year-nav').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  asNavFor: '.year-info',
-  dots: false,
-  arrows: true,
-  centerMode: false,
-  focusOnSelect: false
-});
-
-
-
-
-
-
-});
-
 
 
 // SOCIAL PANEL JS
@@ -188,10 +160,3 @@ close_btn.addEventListener('click', () => {
   social_panel_container.classList.remove('visible')
 });
 
-
-    // $(document).ready(function () {
-    //     $('.year-info img')
-    //         .width('100%')
-    //         .height('600px');
-
-    // });s
