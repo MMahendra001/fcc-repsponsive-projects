@@ -20,11 +20,8 @@
 	.h6,h6 {font-size: 20px;}	
 	.btn {padding: 12px 15px;}	
 
-	.tribute-wrap {padding: 50px 0px;}
-	.company-achievements {padding: 50px 10px;}
-	.tribute-wrap #title {margin-bottom: 40px;}
-	#tribute-info{margin-bottom:50px;}
-	.achievements-count {margin-bottom: 50px;}
+	.survey-form-wrap {padding: 50px 0px 100px 0px;}
+	.survey-form-wrap .heading{margin-bottom:45px;}
 
 
 }
@@ -38,13 +35,12 @@
 	.h5,h5 {font-size: 20px;}
 	.h6,h6 {font-size: 18px;}	
 	.btn {padding: 10px;font-size: 12px;}
-	input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"], textarea {height: 50px;}
+	input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"]{height: 46px;}
+	textarea{height:100px;}
 	
 	.heading h2,.heading h1.h2{margin: 0px 0px 30px;}
 
-	ul.counter li {padding: 40px 20px 30px;}
-	ul.counter li h3 {font-size: 40px; margin: 0px 0px 10px;}
-	ul.counter li p {font-size: 16px;  line-height: 30px;}	
+
 
 }
 @media only screen and (max-width:767px){
@@ -57,8 +53,25 @@
 	.h5,h5 {font-size: 18px;}
 	.h6,h6 {font-size: 18px;}
 	.btn {padding: 10px;font-size: 12px;}
-	select {padding-left: 15px;padding-right: 35px;background-size: 10px;background-position: right 15px center;font-size: 18px;}
-	p {font-size: 15px;}	
+	p {font-size: 15px;line-height: normal;}
+
+	input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"]{font-size:15px;}
+	.form-group label {font-size: 15px;}
+	.form-group label, .form-group input, .form-group select {width: 100%;font-size:15px;}	
+	textarea{font-size:15px;padding: 10px 15px;}
+
+	select {padding:10px 35px 10px 15px;background-size: 10px;background-position: right 15px center;font-size:15px;}
+	select option{font-size:15px;}
+	.survey-form-wrap .form-group.radio-btn-wrap label, .survey-form-wrap .form-group.checkbox-btn-wrap label{font-size:15px;}
+	.form-group {margin-bottom: 25px;}
+	.floating-btn{font-size: 14px;padding: 10px 20px;height: unset;}
+
+	.form-group.radio-btn-wrap input[type="radio"] + label:before{width: 16px;height: 16px;}
+	.form-group.radio-btn-wrap input[type="radio"]:checked + label:after{width:10px;height:10px;}
+
+	.form-group.checkbox-btn-wrap input[type="checkbox"] + label:before{width: 16px;height: 16px;}
+	.form-group.checkbox-btn-wrap input[type="checkbox"]:checked + label:after{width: 5px;height: 10px;left: 1px;top: 4px;}
+	
 
 }
 @media only screen and (max-width:640px){
@@ -68,22 +81,31 @@
 	.h4,h4 {font-size: 20px;}
 	.h5,h5 {font-size: 18px;}
 	.h6,h6 {font-size: 18px;}
-	.inner-banner-height {min-height: 350px;}
-	input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"], textarea {height: 40px;}
-	.form-part {padding: 25px 15px !important;margin-bottom: 40px !important;}
-	.form-group label {width: 100%;text-align: left;margin-bottom: 15px;font-size: 16px;}
-	.form-group select {height: 40px;}
-	.form-group label, .form-group input, .form-group select {width: 100%;}	
 
-	ul.counter li h3 {font-size: 30px;}
-	ul.counter li p {font-size: 14px; line-height: 24px;}
-	ul.counter li {padding: 30px 15px 20px;}
+
+	input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="search"], input[type="number"]{height: 40px;}
+	.form-group label {width: 100%;text-align: left;margin-bottom: 15px;}
+	.form-group select {height: 40px;}
+	.form-group label, .form-group input, .form-group select {width: 100%;font-size:15px;}	
+
+	.form-group.left{width:100%;padding-right:0px;}
+	.form-group.right{width:100%;padding-left:0px;}
+
+	.survey-form-wrap form#survey-form{padding: 30px 25px;}
+
+
 
 }
 @media only screen and (max-width:479px){
 
-	ul.counter li {width: 100%;}
-	ul.counter li:nth-child(even) {border-left: 0px solid #f1f1f1; border-right: 0px solid #f1f1f1;margin:10px 0px;}
+.survey-form-wrap form#survey-form{padding: 30px 20px;}
+.social-panel-container.visible{transform:translateX(0px);}
+.floating-btn{right:10px;}
+.social-panel {border: 2px solid #001F61;height: 160px;width: 305px;}
+.social-panel ul li a{font-size:16px;height: 40px;width: 40px;}
+.social-panel button.close-btn {font-size: 16px;top: -4px;right: 0px;padding: 0px 8px;}
+
+.form-group{margin-bottom:20px;}
 
 
 }

@@ -86,7 +86,16 @@
 	ul.counter li:nth-child(even) {border-left: 0px solid #f1f1f1; border-right: 0px solid #f1f1f1;margin:10px 0px;}
 
 
+	.survey-form-wrap form#survey-form{padding: 30px 20px;}
+	.social-panel-container.visible{transform:translateX(0px);}
+	.floating-btn{right:10px;}
+	.social-panel {border: 2px solid #001F61;height: 160px;width: 305px;}
+	.social-panel ul li a{font-size:16px;height: 40px;width: 40px;}	
+	.social-panel button.close-btn {font-size: 16px;top: -4px;right: 0px;padding: 0px 8px;}
+
 }
+
+
 @media only screen and (max-width:359px){
 
 }

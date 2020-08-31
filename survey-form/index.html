@@ -22,49 +22,79 @@
 	    <!-- Survey Form -->
 	    <section class="survey-form-wrap">
 	        <div class="container">
-	            <div >
-	                <h1 id="title">Survey Form</h1>
-	                <p id="description">Survey Form Description</p>                   
+	            <div class="heading">
+	                <h1 id="title">Developer Job Survey</h1>
+	                <p id="description">This is survey on Developers who are currently applying for job.</p>                   
 	            </div>
 	            <form  id="survey-form" action="/action_page.php" target="_blank">
-	            	<div class="form-group">
-	            		<label for="name" id="name-label">Name</label>
-	            		<input type="text" name="name" id="name" placeholder="Your Name" required>
+	            	<div class="form-group-wrap">
+		            	<div class="form-group left">
+		            		<label for="name" id="name-label">First Name</label>
+		            		<input type="text" name="name" id="name" placeholder="Your First Name" required>
+		            	</div>
+		            	<div class="form-group right">
+		            		<label for="name" id="name-label">Last Name</label>
+		            		<input type="text" name="name" id="last-name" placeholder="Your Last Name" required>
+		            	</div>
+	            	</div>	
+	            	<div class="form-group-wrap">	            	            	
+		            	<div class="form-group left">
+		            		<label for="email" id="email-label">Email</label>
+		            		<input type="email" name="email" id="email" placeholder="Your Email" required>
+		            	</div>	   
+		            	<div class="form-group right">
+		            		<label for="number" id="number-label">Number</label>
+		            		<input type="number" name="number" id="number" placeholder="Your Number" min="1" max="5">
+		            	</div>
 	            	</div>
-	            	<div class="form-group">
-	            		<label for="email" id="email-label">Email</label>
-	            		<input type="email" name="email" id="email" placeholder="Your Email" required>
-	            	</div>	   
-	            	<div class="form-group">
-	            		<label for="number" id="number-label">Number</label>
-	            		<input type="number" name="number" id="number" placeholder="Your Email" min="1" max="5">
-	            	</div>	 
+	            	<div class="form-group-wrap">	            	            		            	
+						<div class="form-group left">
+							<label for="job-positon" id="job-position-label">Position you are applying for</label>
+							<select name="job-positon" id="dropdown">
+							  <option value="select-job-position">Select Job Position</option>
+							  <option value="front-end">Front End Developer</option>
+							  <option value="back-end">Back End Developer</option>
+							  <option value="full-stack">Full Stack Developer</option>
+							  <option value="game">Game Developer</option>
+							</select>	
+						</div>
+					</div>
 
-					<label for="cars">Choose a car:</label>
-					<select name="cars" id="dropdown">
-					  <option value="volvo">Volvo</option>
-					  <option value="saab">Saab</option>
-					  <option value="fiat">Fiat</option>
-					  <option value="audi">Audi</option>
-					</select>	
+					<div class="form-group radio-btn-wrap">
+					  <p id="radio-btn-label">Your Experience</p>
+					  <input type="radio" id="zero-one" name="experience" value="zero-one">
+					  <label for="zero-one">0 - 1 Years</label>
+					  <input type="radio" id="one-five" name="experience" value="one-five">
+					  <label for="one-five">1 - 5 Years</label>
+					  <input type="radio" id="more-then-five" name="experience" value="more-then-five">
+					  <label for="more-then-five">More Then 5 Years</label>	    
+					</div>
+					
+					<div class="form-group checkbox-btn-wrap">
+					  <p  id="checkbox-btn-label">What Programming Language Do You Use?</p>					  
+					  <input type="checkbox" id="javascript" name="javascript" value="javascript">
+					  <label for="javascript"> Javascript</label><br>
+					  <input type="checkbox" id="python" name="python" value="python">
+					  <label for="python"> Python</label><br>
+					  <input type="checkbox" id="C++" name="C++" value="C++">
+					  <label for="C++"> C++</label>
+					</div>		
+					<div class="form-group">
+						<label for="why-interested" id="why-interested-label">Why are you interested in this position?</label>
+						<textarea name="why-interested"  id="why-interested" placeholder="Why are you interested in this position?"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="why-hire-you" id="why-hire-you-label">Why do you think we should hire you for this position?</label>
+						<textarea name="why-hire-you"  id="why-hire-you" placeholder="Why do you think we should hire you for this position?"></textarea>
+					</div>					
+					<div class="form-group">
+						<label for="salary" id="salary-label">What are your salary expectations?</label>
+						<textarea name="salary"  id="salary" placeholder="What are your salary expectations?"></textarea>
+					</div>					
 
-					<textarea ></textarea>
-
-					  <input type="radio" id="male" name="gender" value="male">
-					  <label for="male">Male</label><br>
-					  <input type="radio" id="female" name="gender" value="female">
-					  <label for="female">Female</label><br>
-					  <input type="radio" id="other" name="gender" value="other">
-					  <label for="other">Other</label>	    
-					  
-					  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-					  <label for="vehicle1"> I have a bike</label><br>
-					  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-					  <label for="vehicle2"> I have a car</label><br>
-					  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-					  <label for="vehicle3"> I have a boat</label>		
-					  
-					  <input type="submit" value="Submit" id="submit" class="btn">			          	 	            	         	
+					<div class="form-group submit-btn">
+					  <input type="submit" value="Submit" id="submit" >
+					</div>			          	 	            	         	
 	            	
 	            </form>
 	        </div>
